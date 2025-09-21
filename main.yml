@@ -1,7 +1,8 @@
 - name: run collection and role
   hosts: all
   become:true
-  collections:
-     - rhel.user
-  roles:
-     - name: newuser
+  tasks:
+    - name: copy file
+      copy:
+        content: "hello"
+        dest: /tmp/test.txt
