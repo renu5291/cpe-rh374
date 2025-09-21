@@ -1,0 +1,5 @@
+[testing]
+serverb.lab.example.com
+
+[development]
+servera.lab.example.com
