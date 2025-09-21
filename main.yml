@@ -1,6 +1,6 @@
+---
 - name: run collection and role
   hosts: all
-  become:true
   tasks:
     - name: copy file
       copy:
