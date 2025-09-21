@@ -1,0 +1,7 @@
+- name: run collection and role
+  hosts: all
+  become:true
+  collections:
+     - rhel.user
+  roles:
+     - name: newuser
